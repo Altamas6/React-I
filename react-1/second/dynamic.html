@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JSX and Babel</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+      // Your JSX code here
+      // 1. selecting a div with the id root
+      const root = document.querySelector("#root")
+      // 2. defining a variable with JSX
+      const element = "Seize the world"
+      // 3. using the element variable in h1 tag
+      const ele= <h1>{element}</h1>
+      // 4. rendering the element variable in the root div
+      ReactDOM.render(ele,root)
+    </script>
+  </body>
+</html>
